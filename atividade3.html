@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="campo_nome" placeholder="nome" />
+    <input type="number" id="campo_idade" placeholder="idade" />
+    <input type="text" id="campo_sexo" placeholder="sexo" />
+    <button onclick="MostraTudo()">Enviar</button>
+</body>
+
+<script>
+function MostraTudo() {
+          var nome = document.querySelector("#campo_nome").value;
+          var idade = document.querySelector("#campo_idade").value;
+          var sexo = document.querySelector("#campo_sexo").value;
+          alert(`Olá ${nome}, você tem ${idade} anos e é do sexo ${sexo}!`);
+    }
+</script>
+</html>
