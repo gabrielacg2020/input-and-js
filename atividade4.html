@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>  
-    <select id= "cidade">
-        <option value = "Boracéia">Boracéia</option>
-        <option value = "Canadá">Alguma cidade do Canadá</option>
-        <option value = "Jaú">Jaú</option>
-        <option value = "Avaré">Avaré</option>
-
+  </head>
+  <body>
+    <select id="cidade">
+      <option value="Boracéia">Boracéia</option>
+      <option value="Canadá">Alguma cidade do Canadá</option>
+      <option value="Jaú">Jaú</option>
+      <option value="Avaré">Avaré</option>
     </select>
-    <select id= "nome">
-        <option value = "Gabriela">Gabi</option>
-        <option value = "Erik">Erik</option>
-        <option value = "Bruno">Nuada</option>
-        <option value = "Eduardo">Dú</option>
-        <option value = "Mayra">Mayra</option>
+    <select id="nome">
+      <option value="Gabriela">Gabi</option>
+      <option value="Erik">Erik</option>
+      <option value="Bruno">Nuada</option>
+      <option value="Eduardo">Dú</option>
+      <option value="Mayra">Mayra</option>
     </select>
-    <select id= "idade">
-        <option value = "20">20</option>
-        <option value = "21">21</option>
-        <option value = "23">23</option>
-        <option value = "26">26</option>
+    <select id="idade">
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="23">23</option>
+      <option value="26">26</option>
     </select>
     <button onclick="execute()">Enviar</button>
     <script>
-        function execute () {
-            const cidade = document.querySelector("#cidade").value;
-            const nome = document.querySelector("#nome").value;
-            const idade = document.querySelector("#idade").value;
+      function execute() {
+        const cidade = document.querySelector("#cidade").value;
+        const nome = document.querySelector("#nome").value;
+        const idade = document.querySelector("#idade").value;
 
-            if (cidade == "Boracéia" && nome == "Gabriela" && idade == "20") {
-                alert ('A pessoa selecionada é a Gabi!');
-
-            }
-            if (cidade == "Boracéia" && nome == "Eduardo" && idade == "23") {
-                alert ('A pessoa selecionada é o Dú!');
-            }
-            if (cidade == "Avaré" && nome == "Bruno" && idade == "23") {
-                alert ('A pessoa selecionada é a mais linda do mundo!');
-            }
-            if (cidade == "Jaú" && nome == "Mayra" && idade == "26") {
-                alert ('A pessoa selecionada é a Mayra!');
-                
-            }
-            if (cidade == "Canadá" && nome == "Erik" && idade == "21") {
-                alert ('A pessoa selecionada é o Erik!');
-                
-            }
-            else {
-                alert('Usuário não encontrado.');
-            }
+        if (cidade == "Boracéia" && nome == "Gabriela" && idade == "20") {
+          alert("A pessoa selecionada é a Gabi!");
+        } else if (cidade == "Boracéia" && nome == "Eduardo" && idade == "23") {
+          alert("A pessoa selecionada é o Dú!");
+        } else if (cidade == "Avaré" && nome == "Bruno" && idade == "23") {
+          alert("A pessoa selecionada é a mais linda do mundo!");
+        } else if (cidade == "Jaú" && nome == "Mayra" && idade == "26") {
+          alert("A pessoa selecionada é a Mayra!");
+        } else if (cidade == "Canadá" && nome == "Erik" && idade == "21") {
+          alert("A pessoa selecionada é o Erik!");
+        } else {
+          alert("Usuário não encontrado.");
         }
+      }
     </script>
-
-</body>
+  </body>
 </html>
